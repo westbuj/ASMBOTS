@@ -1,0 +1,251 @@
+<HTML>
+<HEAD>
+<link REL="STYLESHEET" TYPE="text/css" HREF="file:///android_asset/docstyle.css" Title="mainStyles">
+
+</HEAD>
+<body> 
+<BR>
+<CENTER><span class="ArticleTitle">sBotv2 Commands</span><HR>
+<img src="file:///android_asset/arch_diagram.png"></CENTER>
+<BR>
+<HR>
+<span class="ArticleText">
+These commands apply to sBotV2 chipset.<HR>
+</span>
+
+<table>
+<TR><TD class="ArticleTitle">RSET</TD><TD valign="bottom" align='left' class="ArticleText" > { "Target register", "Value"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">set register TARGET_REG to VALUE.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>RSET TRGX BALX
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Set the TRGX register to the value in the BALX register.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">DSET</TD><TD valign="bottom" align='left' class="ArticleText" >{ "source reg 1", "target value 1", "source reg 2","target value 2"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">sets 2 registers at once.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>RSET TRGX BALX TRGY BALY
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Set the TRGX and TRGY registers to the value in the BALX and BALY register.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">KICK</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Direction", "Power"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Kick the ball.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>RSET GOLR 5
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Kicks the ball at the angle in param1 at the power in param2.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">JULT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Number 1", "Number 2","Label"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jump if less than
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>JULT AUX1 AUX2 :LABEL
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jumps to the specified label if param1 < param2.
+</TD></TR>
+</table>
+
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">JUGT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Number 1", "Number 2","Label"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jump if greater than.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>JUGT AUX1 AUX2 :LABEL
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jumps to the specified label if param1 > param2";.
+</TD></TR>
+</table>
+
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">JUBT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "number", "lower","upper",":label"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jump if between.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>JUBT AUX1 AUX2 :LABEL
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jumps to the specified label if param3 < param1 < param2.
+</TD></TR>
+</table>
+
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">JUXT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "number", "lower","upper",":label"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">jump if not between
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>JUXT AUX1 AUX2 :LABEL
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Jumps to the specified label if number is outside lower and upper.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">INC</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Target Register", "Increment amount"}
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Increment
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>INC RET1 2
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Increments param1 by param2.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">DEC</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Target Register", "Decrement amount"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Decrement.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>DEC RET2 1
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Decrements param1 by param2.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">MULT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Target Register", "Factor"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Multiply.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>MULT RET1 2
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Multiplies param1 by param2.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">DIV</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Numerator", "Denominator"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Divide
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>DIV RET1 2
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Divides param1 by param2.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">ANGL</TD><TD valign="bottom" align='left' class="ArticleText" > { "x1", "y1", "x2","y2"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Angle
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>ANGL POSx POSY BALX BALY
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">sets RET1 to the angle between two points.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">LNPT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Distance", "Angle", "x coord","y coord"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Line Point.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>LNPT  BALD BALR POSX POSY
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">sets RET1 and RET2 to a point at the specified angle and  distance from a reference point.
+</TD></TR>
+</table>
+
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">DIST</TD><TD valign="bottom" align='left' class="ArticleText" >{ "X1", "Y1", "X2","Y2"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Distance to.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>DIST  GOLX GOLY POSX POSY
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Calculates the distance between two points.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">PUSH</TD><TD valign="bottom" align='left' class="ArticleText" >{ "stack", "Value"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Push value to a stack.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>PUSH  1 RET1
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Puts value on the stack at the specified stack.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">POP</TD><TD valign="bottom" align='left' class="ArticleText" >{ "stack", "Value"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Pop.
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>POP 1 AUX1
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Puts value from the stack to the specified register.
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">GETO</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Opponent ID"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Acquire Opponent data
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>GETO 1
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Returns position, heading, and speed of opposing bot to RET1, RET2, RET3, and RET4
+</TD></TR>
+</table>
+
+<HR>
+<table>
+<TR><TD class="ArticleTitle">GETT</TD><TD valign="bottom" align='left' class="ArticleText" >{ "Team ID"}</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Acquire Team data
+</TD></TR>
+<TR><TD></TD><TD  class="SampleCode"><i>Example:</i>
+<BR>GETT 1
+</TD></TR>
+<TR><TD></TD><TD  class="ArticleText">Returns position, heading, and speed of bot on your team to RET1, RET2, RET3, and RET4
+</TD></TR>
+</table>
+
+<TABLE><TR><TD><a class= "navigationLink" href="file:///android_asset/cpu.html">PREV</a></TD>
+<TD width = "70%"><CENTER><span class="NavigationTitle">Navigation</span></CENTER></TD>
+<TD><a class= "navigationLink"  href="file:///android_asset/move_bot.html">NEXT</a></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/reg_ref.html">Registers</a></CENTER></TD>
+<TD></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/command_ref.html">Commands</a></CENTER></TD>
+<TD></TD></TR>
+</TABLE>
+          
+
+</body>
+</html>

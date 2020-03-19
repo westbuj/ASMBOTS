@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<link REL="STYLESHEET" TYPE="text/css" HREF="file:///android_asset/docstyle.css" Title="mainStyles">
+
+</HEAD>
+<body> 
+<BR>
+<CENTER><span class="ArticleTitle">Coding your asmBot</span><HR>
+<img src="file:///android_asset/icon.png"></CENTER>
+
+<HR>
+<span class="ArticleText">
+Code is a series of instructions in sequential order. Each instruction is called a line. A line can either be a command or a label.
+<BR><BR>
+Commands occupy a line of code and are generally followed by one or more parameters. The meaning of each parameter varies by the command. For instance, the kick command takes two parameters, the direction and speed. A line of code using kick might look like this:
+<BR><BR>
+KICK GOLR 10
+<BR><BR>
+Parameters can be either a literal number (such as 10), a register (such a GOLR), or a Label (such as :KICK_BALL_AT_GOAL).
+<BR><BR>
+Besides commands, code can also contain labels. Labels in code mark a point that can be jumped to from another location.
+<BR><BR>
+Labels are entered by starting the line with a colon. For instance, the code
+<BR><BR>
+:KICK_BALL_AT_GOAL
+<BR><BR>
+doesn't have an effect as a command, but other commands can jump to this location by jumping to the label :KICK_BALL_AT_GOAL.
+<BR><BR>
+Note: :KICK_BALL_AT_GOAL is an example, you can use any labels you desire, just precede them with a colon.
+
+<BR><BR>
+a few commands
+
+<table>
+<TR><TD class="ArticleTitle">RSET</TD><TD  class="ArticleText" >PARAM1 PARAM2</TD></TR>
+<TR><TD  class="ArticleText" colspan=2><BR>Sets the register PARAM1 to the value in PARAM2.<BR><BR>
+</TD></TR>
+<TR><TD  class="SampleCode" colspan=2><i>Examples:</i><BR>RSET TRGX BALX<BR>RSET NMOD 0
+</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">JMPA</TD><TD  class="ArticleText" >PARAM1</TD></TR>
+<TR><TD  class="ArticleText" colspan=2><BR>Sets the code instruction point to where the label first occurs.<BR><BR>
+</TD></TR>
+<TR><TD  class="SampleCode" colspan=2><i>Examples:(an infinite loop)</i>
+<BR>:START
+<BR>JMPA :START
+</TD></TR>
+</table>
+
+<TABLE><TR><TD><a class= "navigationLink" href="move_bot.html">PREV</a></TD>
+<TD width = "70%"><CENTER><span class="NavigationTitle">Navigation</span></CENTER></TD>
+<TD><a class= "navigationLink"  href="file:///android_asset/program.html">NEXT</a></TD></TR>
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/reg_ref.html">Registers</a></CENTER></TD>
+<TD></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/command_ref.html">Commands</a></CENTER></TD>
+<TD></TD></TR>
+
+</TABLE>
+
+          
+
+</body>
+</html>

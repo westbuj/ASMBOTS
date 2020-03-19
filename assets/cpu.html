@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<link REL="STYLESHEET" TYPE="text/css" HREF="file:///android_asset/docstyle.css" Title="mainStyles">
+
+</HEAD>
+<body> 
+<BR>
+<CENTER><span class="ArticleTitle">The CPU</span><HR>
+<img src="file:///android_asset/cpu_regs.png"></CENTER>
+
+<HR>
+<span class="ArticleText">
+The CPU consists of a set of REGISTERS that contain numbers. The CPU recognizes a set of commands that operate on the REGISTERS (or the numbers they contain).
+<BR><BR>
+The Function Co-Processor is a pre-programed processor that handles the details of controlling a robot or accessing some of the other features of the robot.
+<BR><BR>
+The FCP monitors certain REGISTERS and automatically responds based on the value in the register. The FPU automatically updates certain registers as well. The registers updated by the FCP are inputs. The commands given to the CPU will generate output that causes the robot to respond by running or kicking a goal.
+<BR><BR>
+
+An example of a REGISTER being read by the FCP is the directional register. The FCP constantly reads the direction register and instructs the various sub-processors that cause the robot's servos and hydraulics to run in the specified direction.
+<BR><BR>
+An example of the FCP updating registers is the robot's position. The FCP updates the position registers with the robots current position obtained from the navigation sub-processor.
+<BR><BR>
+By reading the input registers, and setting the output registers, you can implement custom strategies.
+
+<BR><BR>
+<i>An example command</i>
+<HR>
+</span>
+<span class="CodeText">
+RSET SPD 5
+</span>
+<HR>
+<span class="ArticleText">
+In this simple example, the Register Set (RSET) command is used. The RSET command sets a register to a specified value. The FCP monitors the SPD register and setting its value will cause the robot to speed up (or slow down).
+</span>
+<BR><BR>
+<span class="ArticleText">
+Some registers can only be read by your programs (read only) and other can be both read and changed (read/write). </span>
+<BR>
+<HR>
+
+
+
+<TABLE><TR><TD><a class= "navigationLink" href="arch.html">PREV</a></TD>
+<TD width = "70%"><CENTER><span class="NavigationTitle">Navigation</span></CENTER></TD>
+<TD><a class= "navigationLink"  href="file:///android_asset/registers.html">NEXT</a></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/reg_ref.html">Registers</a></CENTER></TD>
+<TD></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/command_ref.html">Commands</a></CENTER></TD>
+<TD></TD></TR>
+
+</TABLE>
+
+          
+
+</body>
+</html>

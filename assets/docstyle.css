@@ -1,0 +1,167 @@
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 9px;
+}
+.navigation {
+	color: #FFFFFF; 
+	text-decoration: none; 
+	font-weight:bold; 
+	font-size:11px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-variant: small-caps;
+}
+.ArticleTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height:85%;
+}
+.ArticleSubTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	line-height:75%;
+}
+.NavigationTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #AAAAAA;
+}
+.NavigationItem {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-indent: 15px;
+}
+.ArticleText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height:110%;
+}
+.CodeText {
+	font-family: monospace;
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height:110%;
+}
+.crazyBlogStyle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 23px;
+	color: #FFFFFF;
+	line-height:110%;
+}
+.ArticleHeading {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.ArticleTextIndent {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-indent: 45px;
+}
+.styleLegalHead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.styleLegalSubHead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.ArticleContent {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FBEFE2;
+	font-size: 9px;
+}
+.style1 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.PageTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+.ModelName {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.ModelLink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+.SampleCode {
+	font-family: monospace;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-align: left;
+}
+.BlogBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-align: left;
+}
+.SectionTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+#nav-menu ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+} 
+
+ul.navtop
+{
+padding: 0;
+margin: 0;
+} 
+ul.navitem
+{
+list-style: none;
+padding: 8;
+margin: 0;
+} 
+a.navigationlink
+{
+color: #AAAAAA; 
+text-decoration: none; 
+font-weight:bold; 
+font-size:24px; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-variant: small-caps;}
+
+body {
+margin : 4px;
+background-color: #4b732d;
+}
+
+
+}
+
+-->
+</style>
+

@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<link REL="STYLESHEET" TYPE="text/css" HREF="file:///android_asset/docstyle.css" Title="mainStyles">
+
+</HEAD>
+<body> 
+<BR>
+<CENTER><span class="ArticleTitle">Moving your asmBot</span><HR>
+<img src="file:///android_asset/icon.png"></CENTER>
+
+<HR>
+<span class="ArticleText">
+Moving your bot involves manipulating registers. Your bot is always moving and the direction and speed is determined by the values in the DIR and SPD registers.
+The FCP accesses these registers and controls the bot's sub-systems.<BR><BR>
+ The FCP recognizes two modes of operation. You can control the mode by setting the NMOD register.<BR><BR>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">NMOD</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>
+Mode <B>0</B> - The FCP will automatically calculate and set the DIR register causing movement towards the point contained in TRGX, TRGY.
+<BR><BR>
+Mode <B>1</B> - Your program must set the DIR register. As always, the robot will move in the direction specified in the DIR register.
+</TD></TR>
+</table>
+<HR>
+  
+ 
+
+</span>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">TRGX</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the x coordinate of the robot's destination on the soccer field.<BR>
+If NMOD is set to 1, this registers are ignored. If NMOD is 0, the FCP will set the DIR register for you.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">TRGY</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the y coordinate of the robot's destination on the soccer field.<BR>
+If NMOD is set to 1, this registers are ignored. If NMOD is 0, the FCP will set the DIR register for you.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALX</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the x coordinate of the ball on the soccer field.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALY</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the y coordinate of the ball on the soccer field.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALD</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the distance to the ball from the robot.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALR</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the angle to the ball from the robot.</TD></TR>
+</table>
+<HR>
+
+<TABLE><TR><TD><a class= "navigationLink" href="registers.html">PREV</a></TD>
+<TD width = "70%"><CENTER><span class="NavigationTitle">Navigation</span></CENTER></TD>
+<TD><a class= "navigationLink"  href="file:///android_asset/coding.html">NEXT</a></TD></TR>
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/reg_ref.html">Registers</a></CENTER></TD>
+<TD></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/command_ref.html">Commands</a></CENTER></TD>
+<TD></TD></TR>
+
+</TABLE>
+
+          
+
+</body>
+</html>

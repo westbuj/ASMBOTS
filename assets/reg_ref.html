@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<link REL="STYLESHEET" TYPE="text/css" HREF="file:///android_asset/docstyle.css" Title="mainStyles">
+
+</HEAD>
+<body> 
+<BR>
+<CENTER><span class="ArticleTitle">sBotv2 Registers</span><HR>
+<img src="file:///android_asset/arch_diagram.png"></CENTER>
+<BR>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">POSX</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the x coordinate of the robot on the soccer field.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">POSY</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the y coordinate of the robot on the soccer field.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALX</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the x coordinate of the ball on the soccer field.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALY</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the y coordinate of the ball on the soccer field.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">BALD</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the distance to the ball from the robot.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">SPD</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>The speed the robot should move.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">DIR</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>The direction the robot should move.
+The FCP will read this register and cause the robot to move in the specified direction.<BR><BR>
+</TD></TR>
+</table>
+<table>
+<TR><TD class="ArticleTitle">TRGX</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the x coordinate of the robot's destination on the soccer field.<BR>
+If NMOD is set to 1, this registers are ignored. If NMOD is 0, the FCP will set the DIR register for you.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">TRGY</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the y coordinate of the robot's destination on the soccer field.<BR>
+If NMOD is set to 1, this registers are ignored. If NMOD is 0, the FCP will set the DIR register for you.</TD></TR>
+</table>
+<table>
+<TR><TD class="ArticleTitle">NMOD</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Instruct the FCP how to navigate the bot<BR>
+If NMOD is set to 1, this DIR register sets the direction.<BR>
+If NMOD is 0, the FCP will set the DIR register based on the point in TRGX and TRGY.</TD></TR>
+<BR>
+</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">GOLX</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the x coordinate of the goal's center.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">GOLY</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the y coordinate of the goal's center.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">GOLD</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the distance to the goal from the robot.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">GOLR</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>Contains the direction of the goal from the robot.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">AN1</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>The number of radians in one degree.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">AN90</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>The number of radians in 90 degrees.</TD></TR>
+</table>
+<table>
+<TR><TD class="ArticleTitle">PI</TD><TD  class="ArticleText" >read only</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>The number of radians in 180 degrees.</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">USRx</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>USR0 - USR9<BR>User registers</TD></TR>
+</table>
+<HR>
+<table>
+<TR><TD class="ArticleTitle">RETx</TD><TD  class="ArticleText" >read/write</TD></TR>
+<TR><TD  class="ArticleText" colspan=2>RET1 - RET5<BR>Certain FCP functions return values to these registers.</TD></TR>
+</table>
+
+<TABLE><TR><TD><a class= "navigationLink" href="file:///android_asset/cpu.html">PREV</a></TD>
+<TD width = "70%"><CENTER><span class="NavigationTitle">Navigation</span></CENTER></TD>
+<TD><a class= "navigationLink"  href="file:///android_asset/move_bot.html">NEXT</a></TD></TR>
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/reg_ref.html">Registers</a></CENTER></TD>
+<TD></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/command_ref.html">Commands</a></CENTER></TD>
+<TD></TD></TR>
+
+</TABLE>
+          
+
+</body>
+</html>

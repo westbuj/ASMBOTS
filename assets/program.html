@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<link REL="STYLESHEET" TYPE="text/css" HREF="file:///android_asset/docstyle.css" Title="mainStyles">
+
+</HEAD>
+<body> 
+<BR>
+<CENTER><span class="ArticleTitle">Programming</span><HR>
+<img src="file:///android_asset/icon.png"></CENTER>
+
+<span class="ArticleTitle">
+<BR>Your first program!<BR>
+</span>
+<HR>
+<span class="SampleCode">
+RSET NMOD 0<BR>
+:START<BR>
+RSET TRGX BALX<BR>
+RSET TRGY BALY<BR>
+JMPA :START <BR>
+</span>
+<HR>
+<span class="ArticleText">
+The code above represents a complete (but simple) program that will cause the robot to chase the ball.<BR><BR>
+
+The first line, RSET NMOD 0, tells the FCP that we will set our target position, and the FCP will automatically set the DIR register.
+<BR><BR>
+
+The second and third lines set our target position to the position of the ball. The last line, JMPA :START, jumps back to the label :START, and from there, the TRGX and TRGY registers are set again to the balls position, and then the JMPA command sends the program back to start, and it begins again. This is an infinite loop, but because the FCP is constantly update the ball's position, BALX and BALY, the effect is the robot chases the ball.
+<BR><BR>
+A new command <BR><BR>
+<table>
+<TR><TD class="ArticleTitle">DSET</TD><TD  class="ArticleText" >PARAM1 PARAM2 PARAM3 PARAM4</TD></TR>
+<TR><TD  class="ArticleText" colspan=2><BR>The DSET command sets two registers in one step. The register in PARAM1 is set to the value in PARAM2 and the register in PARAM3 is set to the value in PARAM4.
+<BR><BR>
+</TD></TR>
+<TR><TD  class="SampleCode" colspan=2><i>Example:</i><BR>DSET TRGX BALX TRGY BALY<BR>
+</TD></TR>
+</table>
+<HR>
+
+<span class="ArticleTitle">
+<BR>Your second program!<BR>
+</span>
+<HR>
+<span class="SampleCode">
+RSET NMOD 0<BR>
+:START<BR>
+DSET TRGX BALX TRGY BALY<BR>
+JMPA :START <BR>
+</span>
+<HR><BR>
+
+<TABLE><TR><TD><a class= "navigationLink" href="coding.html">PREV</a></TD>
+<TD width = "70%"><CENTER><span class="NavigationTitle">Navigation</span></CENTER></TD>
+<TD><a class= "navigationLink"  href="file:///android_asset/congrats_1.html">NEXT</a></TD></TR>
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/reg_ref.html">Registers</a></CENTER></TD>
+<TD></TD></TR>
+
+<TR><TD></TD>
+<TD width = "70%"><CENTER><a class= "navigationLink"  href="file:///android_asset/command_ref.html">Commands</a></CENTER></TD>
+<TD></TD></TR>
+
+</TABLE>
+
+
+          
+
+</body>
+</html>

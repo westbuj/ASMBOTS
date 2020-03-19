@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+  
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+
+<TextView android:text="PGARMF Secure" android:id="@+id/code_status_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="7pt"></TextView>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+<TableRow>
+  
+
+  <TextView android:text="Command:" android:id="@+id/cmd_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="6pt" ></TextView>
+  <com.jnn.asm.bots.ComboBox  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/com_combo">
+  </com.jnn.asm.bots.ComboBox>
+
+</TableRow>
+<TableRow>
+<TextView android:text=" " android:id="@+id/spacer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="6pt" ></TextView>
+
+<TextView android:layout_weight="1" android:text=" " android:id="@+id/cmd_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="6pt" ></TextView>
+</TableRow>
+<TableRow>
+
+<TextView android:text="op1:" android:id="@+id/op1_help" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<com.jnn.asm.bots.ComboBox  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/op1_combo">
+  </com.jnn.asm.bots.ComboBox>
+</TableRow>
+<TableRow>
+<TextView android:text="op2:" android:id="@+id/op2_help" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<com.jnn.asm.bots.ComboBox  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/op2_combo">
+  </com.jnn.asm.bots.ComboBox>
+
+</TableRow>
+<TableRow>
+
+<TextView android:text="op3:" android:id="@+id/op3_help" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<com.jnn.asm.bots.ComboBox  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/op3_combo">
+  </com.jnn.asm.bots.ComboBox>
+</TableRow>
+<TableRow>
+<TextView android:text="op4:" android:id="@+id/op4_help" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<com.jnn.asm.bots.ComboBox  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/op4_combo">
+  </com.jnn.asm.bots.ComboBox>
+
+</TableRow>
+<TableRow>
+<TextView android:text="op5:" android:id="@+id/op5_help" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<com.jnn.asm.bots.ComboBox  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:id="@+id/op5_combo">
+  </com.jnn.asm.bots.ComboBox>
+
+</TableRow>
+</TableLayout>
+<Button android:text="Apply Code Change" android:id="@+id/sav_button" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>
+</ScrollView>
+
+

@@ -1,0 +1,32 @@
+The Story of asmBots
+
+With the end of the Great Abstracted war, the Union of Empathetic and Quintessence Beings authorized the sale of 300,000 surplus kill-bots. Before selling to the general public, the kill-bots had their lethal components removed or disabled.
+
+Although these robots are missing arms, the robots are agile and equipped with modern computing equipment. Central to each robot is a floating point Central Processing Unit (CPU) and Function Coprocessor (FCP). The FCP has been optimized for Arena Soccer.
+
+The CPU
+The Central Processing Unit executes the commands it is given. The CPU is a set of REGISTERS that contain numbers. The CPU recognizes a set of commands that operate on the REGISTERS (or the numbers they contain).
+
+The FCP
+The Function Co-Processor is a pre-programed processor that handles the details of controlling a robot or accessing some of the other features of the robot.
+
+Besides acting on the REGISTERS, the CPU recognizes commands that interact with the FCP. In some cases, the FCP monitors certain REGISTERS and automatically responds based on the value in the register. In other cases, the FPU automatically updates registers. The registers updated by the FCP are inputs. The commands given to the CPU will generate output that causes the robot to respond by running or kicking a goal.
+
+An example of a REGISTER being read by the CPU is the directional register. The FCP constantly reads the direction register and instructs the various sub-processors that cause the robot's servos and hydraulics to run in the specified direction.
+
+An example of the FCP updating registers is the robot's position. The FCP updates the position registers with the robots current position obtained from the navigation sub-processor.
+
+By reading the input registers, and setting the output registers, you can implement custom strategies.
+
+EXAMPLE 1:
+
+RSET SPD 5
+
+In this simple example, the Register Set (RSET) command is used. The RSET command sets a register to a specified value. The FCP monitors the SPD register and setting its value will cause the robot to speed up (or slow down).
+
+To learn more about the CPU's registers and commands, click on the Next button above.
+
+
+
+
+          

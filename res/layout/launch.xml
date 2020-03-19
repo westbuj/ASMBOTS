@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:paddingLeft="100dp" android:paddingTop="100dp" android:orientation="vertical">
+<Button android:text="Tutorial" android:id="@+id/tutorial_button" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+<Button android:text="Start a new match" android:id="@+id/start_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textStyle="bold"></Button>
+<Button android:text="News" android:id="@+id/news_button" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+<Button android:text="Mute" android:id="@+id/mute_button" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

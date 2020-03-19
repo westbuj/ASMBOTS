@@ -1,0 +1,78 @@
+Details of the CPU
+
+The Registers
+Each bot has over 20 registers. All registers hold a number that can be accessed and used in your programs. Some registers can be updated by your program, but others are read-only, they can not be updated by your program. The BALD is a read-only register. This register contains the distance to the ball and is updated by the FCP.
+
+Here are the registers and their usage:
+
+POSX   read-only
+-----
+Contains the x coordinate the robot on the soccer field.
+  
+POSY   read-only
+-----
+Contains the x coordinate the robot on the soccer field.
+  
+NMOD   read/write
+-----
+Instructs the FCP how to interpret navigation commands. The FCP recognizes two modes of operation.
+
+Mode 0 - The FCP will automatically calculate and set the DIR register causing moving to the point contained in TRGX, TRGY.
+  
+Mode 1 - Causes the robot to move in the direction specified in the DIR register.
+  
+DIR    read/write
+-----
+Depending on the navigation mode (NMOD register), this register contains the direction the robot is moving. In mode 0, the register is set by the FPU. In mode 1, you set the register to a desired direction. The number contain in the register represents radians. A full-circle (360 degrees) equals 2pi radians. For example 3.1415 = 180 degress.
+  
+TRGX   read/write
+-----
+In Navigation mode 0, setting the register causes the bot to move in the direction of the coordinate represented by TRGX, TRGY.
+  
+TRGY  read/write
+-----
+In Navigation mode 0, setting the register causes the bot to move in the direction of the coordinate represented by TRGX, TRGY.
+  
+BALX  read-only
+-----
+The x position of the ball
+  
+BALY  read-only
+-----
+The y position of the ball
+  
+BALD  read-only
+-----
+The distance to the ball.
+  
+SPD   read-write
+-----
+The speed the robot should move.
+  
+IP    read-write
+-----
+The location of the next command the CPU will run.
+  
+GOLX  read-only
+-----
+The x position of the center of the goal.
+  
+GOLY  read-only
+-----
+The Y position of the center of the goal.
+  
+GOLR  read-only
+-----
+The direction (in radians) to the center of the goal from the bot.
+  
+USR   read-write
+-----
+Each bot has ten user registers. You can use these registers as you see fit. The first register is access as USR0 and the last user register is USR9
+  
+  
+Keep reading! Programming an asmBot may seem hard, but you are almost there! Click on Next the next button above.
+  
+  
+  
+   
+  

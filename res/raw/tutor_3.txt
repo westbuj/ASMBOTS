@@ -1,0 +1,98 @@
+CPU Details
+
+Commands, Code, and Programs
+
+Code is a series of commands organized in a file with each command on a separate line. Your programming will create a series of commands and this will be your code.
+
+Labels
+Besides commands, code can also contain labels. Labels in code mark a point that can be jumped to from another location.
+
+Labels are entered by starting the line with a colon. For instance, the code
+
+
+:KICK_BALL_AT_GOAL
+
+doesn't have any effect as a command, but other commands can jump to this location by jumping to the label :KICK_BALL_AT_GOAL.
+
+Note: :KICK_BALL_AT_GOAL is an example, you can use any labels you desire, just precede them with a colon.
+
+Commands
+Commands occupy a line of code and are generally followed by one or more parameters. The meaning of each parameter varies by the command. For instance, the kick command takes two parameters, the direction and speed. A line of code using kick might look like this:
+
+KICK GOLR 10
+
+This instructs the FPU to kick the ball in the direction of the goal with a power of 10.
+
+KICK GOLR 0
+
+This instructs the bot to kick with a zero power. A zero power kick will actually stop the ball.
+
+Parameters can be either a literal number (such as 10), a register (such a GOLR), or a Label (such as :KICK_BALL_AT_GOAL).
+
+The Commands
+
+RSET PARAM1 PARAM2
+Sets the register in PARAM1 to the value in PARAM2. If PARAM2 is a register, then value in the register (PARAM2) is placed in the register indicated by PARAM1.
+
+RSET USR0 GOLR
+Set the USR0 register with the value in GOLR.
+
+RSET USR0 3.1415
+Set the USR0 register to the value 3.1415.
+
+INC PARAM1 PARAM2
+Increments the value in register indicated by PARAM1 by the amount in PARAM2
+
+INC USR0 1
+Adds one to the value in USR0
+INC USR0 -1
+Subtracts one from the value in USR0
+
+JMPA :LABEL
+Sets the instruction pointer to the line of code with the indicated label. This causes the program execution point to change.
+
+JMPA :KICK_BALL_AT_CODE
+Code execution jumps to the label
+
+
+Your First Robot Program!
+----------------------------------------
+RSET NMOD 0
+:START
+RSET TRGX BALX
+RSET TRGY BALY
+JMPA :START 
+----------------------------------------
+
+The code above represents a complete (but simple) program that will cause the robot to chase the ball.
+
+The first line, RSET NMOD 0, tells the FCP that we will set our target position, and the FCP should take care of the calculation and all the details of moving the bot.
+
+The second and third lines set our target position to the position of the ball. The last line, JMPA :START, jumps back to the label :START, and from there, the TRGX and TRGY registers are set again to the balls position, and then the JMPA command sends the program back to start, and it begins again. This is an infinite loop, but because the FCP is constantly update the ball's position, BALX and BALY, the effect is the robot chases the ball.
+
+A new command -   DSET  - Double Register Set
+-------------
+
+
+DSET PARAM1 PARAM2 PARAM3 PARAM4
+The DSET command sets two registers in one step. The register in PARAM1 is set to the value in PARAM2 and the register in PARAM3 is set to the value in PARAM4.
+
+
+
+Our second program
+----------------------------------------
+RSET NMOD 0
+:START
+DSET TRGX BALX TRGY BALY
+JMPA :START 
+----------------------------------------
+This program creates another ball chaser, but with less code.
+
+
+
+Now that you have the basic idea of programming an asmBot, click the Next button to continue learning commands.
+
+
+
+
+

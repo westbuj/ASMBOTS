@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+  <TextView android:text="Select robots" android:id="@+id/header_For_Bot_Select"  android:textSize = "24sp"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="10px"></TextView>
+  
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+    
+<Button android:text=" 1 " android:id="@+id/sel_bot_1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<TextView android:text="" android:id="@+id/sel_bot_1_name" android:textSize = "22sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>  
+  
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+    
+<Button android:text=" 2 " android:id="@+id/sel_bot_2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<TextView android:text="" android:id="@+id/sel_bot_2_name"  android:textSize = "22sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>  
+  
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+    
+<Button android:text=" 3 " android:id="@+id/sel_bot_3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<TextView android:text="" android:id="@+id/sel_bot_3_name"  android:textSize = "22sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>  
+  
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+    
+<Button android:text=" 4 " android:id="@+id/sel_bot_4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<TextView android:text="" android:id="@+id/sel_bot_4_name"  android:textSize = "22sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>  
+  
+  <LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+    
+<Button android:text=" 5 " android:id="@+id/sel_bot_5" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<TextView android:text="" android:id="@+id/sel_bot_5_name"  android:textSize = "22sp" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>  
+    
+  
+
+<Button android:text="Play Equal Team" android:id="@+id/start_game_mirror" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="invisible"></Button>
+<Button android:text="Play Advanced Team" android:id="@+id/start_adv_game" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="invisible"></Button>
+<Button android:text="Cancel team selection" android:id="@+id/cancel_sel_bot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="visible"></Button>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jnn.asm.bots"
+      android:versionName="2.0" android:versionCode="4">
+    <application android:label="@string/app_name" android:icon="@drawable/ic_asm">
+        <activity android:name=".BotLoader"
+                  android:label="@string/app_name" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <activity android:name="CodeViewActivity" android:theme="@style/Theme.Transparent"></activity>
+<activity android:name="EditCodeActivity" android:theme="@style/Theme.Semi"></activity>
+<activity android:name="SelectBotActivity"></activity>
+<activity android:name="com.jnn.ebook.TutorViewer" android:theme="@style/Theme.Transparent"></activity>
+</application>
+    <uses-sdk android:minSdkVersion="4" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest> 
